@@ -20,6 +20,11 @@ var TextAreaCounter = React.createClass({
       text: '',
     };
   },
+  getInitialState: function() {
+    return {
+      text: this.props.text,
+    };
+  },
   render: function() {
     return React.DOM.div(null,
       React.DOM.textarea({
